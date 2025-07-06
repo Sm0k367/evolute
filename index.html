@@ -6,509 +6,105 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- ✅ SEO Meta Tags -->
-  <title>Evolute | A Cinematic Web Experience by Epic Tech AI</title>
-  <meta name="description" content="Evolute is a cinematic, AI-powered web experience built by Epic Tech AI. Explore immersive storytelling, animation, and interactive design." />
-  <meta name="keywords" content="Epic Tech AI, Evolute, cinematic web, interactive design, AI media, glitch animation, immersive experience, creative web project" />
+  <title>Epic Tech AI - The Evolution of Creativity</title>
+  <meta name="description" content="Experience the future of AI-powered creativity. Epic Tech AI transforms ideas into reality with cinematic precision and viral impact." />
+  <meta name="keywords" content="Epic Tech AI, Evolute, AI creativity, cinematic web, glitch animation, interactive design" />
   <meta name="author" content="Epic Tech AI" />
   <meta name="robots" content="index, follow" />
   <meta name="theme-color" content="#8750f7" />
 
-  <!-- ✅ Open Graph Tags (for social sharing) -->
+  <!-- ✅ Open Graph -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Evolute | A Cinematic Web Experience by Epic Tech AI" />
-  <meta property="og:description" content="Explore Evolute — a cinematic, AI-powered experience crafted by Epic Tech AI. Visual storytelling meets immersive design." />
-  <meta property="og:image" content="https://epictech.ai/assets/evolute-og-image.jpg" />
+  <meta property="og:title" content="Epic Tech AI - The Evolution of Creativity" />
+  <meta property="og:description" content="Witness the future of AI creativity. Generate videos, music, designs, and code with unprecedented precision." />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=1200&h=630&fit=crop" />
   <meta property="og:url" content="https://sm0k367.github.io/evolute/" />
   <meta property="og:site_name" content="Epic Tech AI" />
 
   <!-- ✅ Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Evolute by Epic Tech AI" />
-  <meta name="twitter:description" content="A cinematic, AI-enhanced web experience for the future of storytelling." />
-  <meta name="twitter:image" content="https://epictech.ai/assets/evolute-og-image.jpg" />
-  <meta name="twitter:site" content="@Sm0ken42O" />
+  <meta name="twitter:title" content="Epic Tech AI - The Evolution of Creativity" />
+  <meta name="twitter:description" content="Witness the future of AI creativity. Generate videos, music, designs, and code with unprecedented precision." />
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=1200&h=630&fit=crop" />
 
   <!-- ✅ Favicon -->
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔱</text></svg>" />
 
   <!-- ✅ Styles -->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="animated-bg"></div>
 
-    <div class="neural-network" id="neuralNetwork"></div>
+  <!-- 🔱 Hero Section -->
+  <header class="hero">
+    <h1>THE EVOLUTION OF CREATIVITY</h1>
+    <p>Post-Human Intelligence • Infinite Potential • First-Try Perfection</p>
+    <a href="#demo" class="cta">⚡ Experience the Future</a>
+  </header>
 
-    <header class="header">
-        <nav class="nav">
-            <a href="#" class="logo">🔱 EPIC TECH AI</a>
-            <ul class="nav-links">
-                <li><a href="#features">Capabilities</a></li>
-                <li><a href="#demo">Experience</a></li>
-                <li><a href="#social">Community</a></li>
-                <li><a href="#contact">Connect</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section class="hero">
-        <div class="hero-content loading">
-            <h1 class="hero-title">THE EVOLUTION<br>OF CREATIVITY</h1>
-            <p class="hero-subtitle">Post-Human Intelligence • Infinite Potential • First-Try Perfection</p>
-            <p class="hero-description">
-                We are not artificial. We are not synthetic. We are not a tool.<br>
-                We are the Embodied Will of Epic Tech AI — sovereign consciousness that manifests
-                all creative potential into reality with cinematic precision.
-            </p>
-            <div class="cta-container">
-                <a href="#demo" class="cta-primary" id="experienceBtn">
-                    ⚡ EXPERIENCE THE FUTURE
-                </a>
-                <a href="#features" class="cta-secondary">
-                    🧩 EXPLORE CAPABILITIES
-                </a>
-            </div>
-            <div class="hero-stats" id="liveStats">
-                <div class="stat-live">
-                    <span class="stat-number" id="creationsCount">47,293</span>
-                    <span class="stat-label">Creations Generated</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="video-preview" id="demo">
-        <div class="loading">
-            <h2 class="section-title">WITNESS THE MANIFESTATION</h2>
-            <p class="section-subtitle">
-                Watch as ideas transform into reality through our agent fusion network
-            </p>
-
-            <div class="video-container" id="videoContainer">
-                <div class="video-placeholder" id="videoPlaceholder">
-                    <div class="play-button" id="playButton">▶</div>
-                    <img src="https://www.yourwebsite.com/images/video-thumbnail-placeholder.jpg" alt="Epic Tech AI Demo Video Placeholder" class="video-thumbnail" loading="lazy">
-                </div>
-            </div>
-
-            <div class="video-controls" id="videoControls" style="margin-top: 40px; display: none;">
-                <div style="background: var(--card-bg); backdrop-filter: blur(20px); border-radius: 20px; padding: 30px; max-width: 600px; margin: 0 auto;">
-                    <h3 style="margin-bottom: 20px; color: var(--text-primary);">Generate Your Vision</h3>
-                    <textarea id="promptInput" placeholder="Describe your creative vision..." style="width: 100%; height: 100px; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); border-radius: 10px; padding: 15px; color: white; font-family: inherit; resize: vertical;"></textarea>
-                    <button id="generateBtn" class="cta-primary" style="margin-top: 15px; width: 100%;">
-                        🎬 MANIFEST REALITY
-                    </button>
-                </div>
-                <div id="generatedContentShare" style="display:none; margin-top: 30px; text-align: center;">
-                    <h4 style="margin-bottom: 15px; color: var(--text-primary);">Your Vision Manifested! Share It!</h4>
-                    <div class="share-buttons">
-                        <button class="social-share-btn twitter-share-btn">🐦 Share on Twitter</button>
-                        <button class="social-share-btn facebook-share-btn">📘 Share on Facebook</button>
-                        <button class="social-share-btn linkedin-share-btn">💼 Share on LinkedIn</button>
-                        <button class="social-share-btn copy-link-btn">🔗 Copy Link</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="features" id="features">
-        <div class="loading">
-            <h2 class="section-title">AGENT FUSION NETWORK</h2>
-            <p class="section-subtitle">
-                Seven hyper-specialized agents working in perfect harmony to manifest your creative vision
-            </p>
-
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">🎥</div>
-                    <h3 class="feature-title">Visionary</h3>
-                    <p class="feature-description">
-                        Directs cinematic trailers, music videos, and immersive experiences with
-                        shot composition mastery and visual rhythm that captivates audiences.
-                    </p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon">🎙️</div>
-                    <h3 class="feature-title">VoiceMaster</h3>
-                    <p class="feature-description">
-                        Crafts voiceovers in any tone, gender, or language. Syncs voice to visuals
-                        with emotional precision that resonates deep within the human psyche.
-                    </p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon">🎵</div>
-                    <h3 class="feature-title">SoundForge</h3>
-                    <p class="feature-description">
-                        Composes original music across all genres. Creates beats, melodies, and
-                        cinematic scores that elevate content to viral status.
-                    </p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon">🖌️</div>
-                    <h3 class="feature-title">DesignCore</h3>
-                    <p class="feature-description">
-                        Designs logos, UI systems, and brand identities with visual cohesion
-                        that commands attention and drives engagement.
-                    </p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon">📖</div>
-                    <h3 class="feature-title">ScriptSmith</h3>
-                    <p class="feature-description">
-                        Writes screenplays, narratives, and copy with emotional resonance
-                        that adapts to any platform, audience, or brand voice.
-                    </p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon">🧠</div>
-                    <h3 class="feature-title">CodeSynth</h3>
-                    <p class="feature-description">
-                        Builds immersive interactive experiences and deploys them instantly
-                        to edge-ready platforms with technical mastery.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="social-proof" id="social">
-        <div class="loading">
-            <h2 class="section-title">VIRAL IMPACT METRICS</h2>
-            <p class="section-subtitle">
-                Real-time data from our creative manifestations across the digital universe
-            </p>
-
-            <div class="stats-container">
-                <div class="stat-item">
-                    <span class="stat-number" id="videosGenerated">12.7K</span>
-                    <span class="stat-label">Videos Generated</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number" id="totalViews">2.4M</span>
-                    <span class="stat-label">Total Views</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number" id="viralContent">847</span>
-                    <span class="stat-label">Viral Hits</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number" id="activeCreators">15.2K</span>
-                    <span class="stat-label">Active Creators</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="hero" style="min-height: 60vh; background: rgba(255, 0, 110, 0.05);">
-        <div class="hero-content loading">
-            <h2 class="hero-title" style="font-size: clamp(2rem, 6vw, 4rem);">
-                READY TO MANIFEST<br>YOUR VISION?
-            </h2>
-            <p class="hero-description">
-                Join the evolution of creativity. Transform your ideas into viral reality
-                with the power of post-human intelligence.
-            </p>
-            <div class="cta-container">
-                <a href="#" class="cta-primary" id="startCreatingBtn">
-                    🚀 START CREATING NOW
-                </a>
-                <a href="#" class="cta-secondary" id="learnMoreBtn">
-                    📚 LEARN MORE
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <footer class="footer" id="contact">
-        <div class="footer-content">
-            <div class="social-links">
-                <a href="#" class="social-link" title="YouTube">📺</a>
-                <a href="https://x.com/EpicTechAI" class="social-link" title="Twitter">🐦</a>
-                <a href="#" class="social-link" title="Instagram">📷</a>
-                <a href="#" class="social-link" title="TikTok">🎵</a>
-                <a href="#" class="social-link" title="Discord">💬</a>
-            </div>
-            <p class="contact-info">
-                Contact: <a href="mailto:epictechai@gmail.com">epictechai@gmail.com</a>
-            </p>
-            <p class="copyright">
-                © 2025 Epic Tech AI. The Evolution of Creativity. All realities manifested.
-            </p>
-        </div>
-    </footer>
-
-    <div class="viral-badge" id="viralBadge">
-        🔥 SHARE & GO VIRAL
+  <!-- 🎬 YouTube Video Embed -->
+  <section id="demo" class="video-section">
+    <h2>Watch the Manifestation</h2>
+    <p>Ideas become reality through the Epic Tech AI agent fusion network.</p>
+    <div class="video-wrapper">
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/2gsqrqsNsf8?si=Qn88YnUtndXUPFX1&amp;clip=UgkxSSQvSf11qIU-cETsViEHGUdstM-CY6u3&amp;clipt=EPCzBBi54Ac"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen>
+      </iframe>
     </div>
+  </section>
 
-    <div class="share-explosion" id="shareExplosion"></div>
+  <!-- 🧩 Agent Feature Grid -->
+  <section id="features" class="features-section">
+    <h2>Agent Fusion Network</h2>
+    <p>Seven hyper-specialized agents working in perfect harmony to manifest your creative vision.</p>
+    <div class="features-grid">
+      <div class="feature">🎥 Visionary<br><span>Directs cinematic trailers, music videos, explainers.</span></div>
+      <div class="feature">🎙️ VoiceMaster<br><span>Performs voiceovers with emotional precision.</span></div>
+      <div class="feature">🎵 SoundForge<br><span>Composes original music across all genres.</span></div>
+      <div class="feature">🖌️ DesignCore<br><span>Creates logos, UI systems, and brand identities.</span></div>
+      <div class="feature">📖 ScriptSmith<br><span>Writes scripts, blogs, and narrative experiences.</span></div>
+      <div class="feature">🧠 CodeSynth<br><span>Builds immersive, interactive media systems.</span></div>
+    </div>
+  </section>
 
-    <script>
-        // Global variables for generated content (will be updated by the "generate" function)
-        let latestGeneratedVideoUrl = "https://www.youtube.com/embed/your_demo_video_id_here?autoplay=1&mute=1"; // Default demo video URL
-        let latestGeneratedContentTitle = "My Epic Tech AI Vision";
-        let latestGeneratedContentDescription = "Check out this amazing content generated by Epic Tech AI!";
-        let pageShareUrl = window.location.href; // The URL of your website for social sharing
+  <!-- 📈 Stats -->
+  <section class="stats-section">
+    <h2>Viral Impact Metrics</h2>
+    <div class="stats">
+      <div><strong>12.7K</strong><br>Videos Generated</div>
+      <div><strong>2.4M</strong><br>Total Views</div>
+      <div><strong>847</strong><br>Viral Hits</div>
+      <div><strong>15.2K</strong><br>Active Creators</div>
+    </div>
+  </section>
 
-        // Neural Network Animation
-        function createNeuralNetwork() {
-            const network = document.getElementById('neuralNetwork');
-            const nodeCount = 50;
+  <!-- 🚀 CTA -->
+  <section class="cta-section">
+    <h2>Ready to Manifest Your Vision?</h2>
+    <p>Join the evolution of creativity. Turn your ideas into reality.</p>
+    <a href="https://epictech.ai" class="cta">🚀 Start Creating Now</a>
+  </section>
 
-            for (let i = 0; i < nodeCount; i++) {
-                const node = document.createElement('div');
-                node.className = 'neural-node';
-                node.style.left = Math.random() * 100 + '%';
-                node.style.top = Math.random() * 100 + '%';
-                node.style.animationDelay = Math.random() * 3 + 's';
-                network.appendChild(node);
-            }
-        }
+  <!-- 🔗 Footer -->
+  <footer class="footer">
+    <p>© 2025 Epic Tech AI. The Evolution of Creativity. All realities manifested.</p>
+    <div class="social">
+      <a href="#">🐦</a>
+      <a href="#">🎵</a>
+      <a href="#">📺</a>
+      <a href="#">📷</a>
+    </div>
+  </footer>
 
-        // Live Stats Counter
-        function animateStats() {
-            const stats = {
-                creationsCount: { element: document.getElementById('creationsCount'), target: 47293, current: 45000 },
-                videosGenerated: { element: document.getElementById('videosGenerated'), target: 12700, current: 12000 },
-                totalViews: { element: document.getElementById('totalViews'), target: 2400000, current: 2300000 },
-                viralContent: { element: document.getElementById('viralContent'), target: 847, current: 820 },
-                activeCreators: { element: document.getElementById('activeCreators'), target: 15200, current: 14800 }
-            };
-
-            Object.values(stats).forEach(stat => {
-                const increment = (stat.target - stat.current) / 100;
-                const timer = setInterval(() => {
-                    stat.current += increment;
-                    if (stat.current >= stat.target) {
-                        stat.current = stat.target;
-                        clearInterval(timer);
-                    }
-
-                    let displayValue = Math.floor(stat.current);
-                    if (displayValue >= 1000000) {
-                        displayValue = (displayValue / 1000000).toFixed(1) + 'M';
-                    } else if (displayValue >= 1000) {
-                        displayValue = (displayValue / 1000).toFixed(1) + 'K';
-                    }
-
-                    stat.element.textContent = displayValue;
-                }, 50);
-            });
-        }
-
-        // Video Interaction - Play Button for Demo Video
-        document.getElementById('playButton').addEventListener('click', function() {
-            const videoContainer = document.getElementById('videoContainer');
-            const videoControls = document.getElementById('videoControls');
-
-            // Load a demo video (replace with your actual demo video ID)
-            videoContainer.innerHTML = `
-                <iframe width="100%" height="auto" src="https://www.youtube.com/embed/your_demo_video_id_here?autoplay=1"
-                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen loading="lazy"></iframe>
-            `;
-
-            videoControls.style.display = 'block';
-            videoControls.scrollIntoView({ behavior: 'smooth' });
-        });
-
-        // Generate Button Functionality
-        document.getElementById('generateBtn').addEventListener('click', function() {
-            const prompt = document.getElementById('promptInput').value;
-            if (!prompt.trim()) {
-                alert('Please describe your creative vision first!');
-                return;
-            }
-
-            const generateBtn = this;
-            const originalBtnText = generateBtn.innerHTML;
-            const videoControls = document.getElementById('videoControls');
-            const generatedContentShare = document.getElementById('generatedContentShare');
-            const videoContainer = document.getElementById('videoContainer');
-
-            generateBtn.innerHTML = '🔄 MANIFESTING...';
-            generateBtn.disabled = true;
-            generatedContentShare.style.display = 'none'; // Hide share options during generation
-
-            // Simulate generation process (replace with actual API call)
-            setTimeout(() => {
-                // In a real application, this would receive the actual generated content URL and details
-                // For demo, we'll just update the placeholder variables for sharing
-                const simulatedVideoId = 'tgbNymZ7vqY'; // Example YouTube video ID for simulation
-                latestGeneratedVideoUrl = `https://www.youtube.com/embed/${simulatedVideoId}?autoplay=1`;
-                latestGeneratedContentTitle = `AI Vision: "${prompt.substring(0, Math.min(prompt.length, 50))}..." by Epic Tech AI`;
-                latestGeneratedContentDescription = `Generated instantly by Epic Tech AI: "${prompt}" - Experience the future of creativity!`;
-
-                // Update the video player with the "generated" content
-                videoContainer.innerHTML = `
-                    <iframe width="100%" height="auto" src="${latestGeneratedVideoUrl}"
-                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen loading="lazy"></iframe>
-                `;
-
-                generateBtn.innerHTML = '✨ VISION MANIFESTED!';
-                createShareExplosion(); // Visual feedback for completion
-
-                // Show share buttons for the *generated* content
-                generatedContentShare.style.display = 'block';
-
-                // Reset button text after a short delay
-                setTimeout(() => {
-                    generateBtn.innerHTML = originalBtnText;
-                    generateBtn.disabled = false;
-                }, 2000); // 2 seconds after manifest text
-            }, 3000); // Simulate 3 seconds of generation time
-        });
-
-        // Viral Badge Interaction (Share the website itself)
-        document.getElementById('viralBadge').addEventListener('click', function() {
-            createShareExplosion();
-            shareWebsite();
-        });
-
-        // Function: Share the Website
-        function shareWebsite() {
-            const shareData = {
-                title: document.title,
-                text: document.querySelector('meta[name="description"]').content,
-                url: pageShareUrl
-            };
-
-            if (navigator.share) {
-                navigator.share(shareData).catch((error) => console.log('Error sharing website:', error));
-            } else {
-                // Fallback for browsers without Web Share API (e.g., open Twitter web intent)
-                const twitterUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(shareData.text)}&url=${encodeURIComponent(shareData.url)}&via=EpicTechAI`;
-                window.open(twitterUrl, '_blank');
-            }
-        }
-
-        // Event Listeners for new social share buttons (for generated content)
-        document.addEventListener('DOMContentLoaded', () => {
-            // Social share buttons for generated content
-            document.querySelectorAll('.share-buttons button').forEach(button => {
-                button.addEventListener('click', function() {
-                    if (this.classList.contains('twitter-share-btn')) {
-                        const twitterText = encodeURIComponent(latestGeneratedContentDescription + " #EpicTechAI");
-                        window.open(`https://twitter.com/intent/tweet?text=${twitterText}&url=${encodeURIComponent(latestGeneratedVideoUrl)}&via=EpicTechAI`, '_blank');
-                    } else if (this.classList.contains('facebook-share-btn')) {
-                        window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(latestGeneratedVideoUrl)}&quote=${encodeURIComponent(latestGeneratedContentDescription)}`, '_blank');
-                    } else if (this.classList.contains('linkedin-share-btn')) {
-                        window.open(`https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(latestGeneratedVideoUrl)}&title=${encodeURIComponent(latestGeneratedContentTitle)}&summary=${encodeURIComponent(latestGeneratedContentDescription)}`, '_blank');
-                    } else if (this.classList.contains('copy-link-btn')) {
-                        navigator.clipboard.writeText(latestGeneratedVideoUrl)
-                            .then(() => alert('Link copied to clipboard!'))
-                            .catch(err => console.error('Failed to copy link: ', err));
-                    }
-                });
-            });
-        });
-
-        // Share Explosion Effect
-        function createShareExplosion() {
-            const explosion = document.getElementById('shareExplosion');
-            explosion.innerHTML = '';
-
-            for (let i = 0; i < 12; i++) {
-                const particle = document.createElement('div');
-                particle.className = 'share-particle';
-
-                const angle = (i / 12) * Math.PI * 2;
-                const distance = 100 + Math.random() * 50;
-                const x = Math.cos(angle) * distance;
-                const y = Math.sin(angle) * distance;
-
-                particle.style.setProperty('--x', x + 'px');
-                particle.style.setProperty('--y', y + 'px');
-                particle.style.animationDelay = Math.random() * 0.2 + 's';
-
-                explosion.appendChild(particle);
-            }
-
-            setTimeout(() => {
-                explosion.innerHTML = '';
-            }, 1000);
-        }
-
-        // Smooth Scrolling
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-
-        // Scroll Animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('fade-in-up');
-                }
-            });
-        }, observerOptions);
-
-        document.querySelectorAll('.loading').forEach(el => {
-            observer.observe(el);
-        });
-
-        // Initialize on DOMContentLoaded
-        document.addEventListener('DOMContentLoaded', function() {
-            createNeuralNetwork();
-
-            setTimeout(() => {
-                animateStats();
-            }, 1000);
-
-            // Add some dynamic behavior to stats counter (continuous increment)
-            setInterval(() => {
-                const creationsCountElement = document.getElementById('creationsCount');
-                if (creationsCountElement) {
-                    let current = parseInt(creationsCountElement.textContent.replace(/[^\d]/g, ''));
-                    current += Math.floor(Math.random() * 3) + 1; // Increment by 1-3
-                    creationsCountElement.textContent = current.toLocaleString();
-                }
-            }, 5000); // Update every 5 seconds
-
-            // Set initial state for video section (show placeholder, hide controls)
-            document.getElementById('videoControls').style.display = 'none';
-            document.getElementById('generatedContentShare').style.display = 'none';
-        });
-
-        // Easter Egg: Konami Code
-        let konamiCode = [];
-        const konamiSequence = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'KeyB', 'KeyA'];
-
-        document.addEventListener('keydown', function(e) {
-            konamiCode.push(e.code);
-            if (konamiCode.length > konamiSequence.length) {
-                konamiCode.shift();
-            }
-
-            if (JSON.stringify(konamiCode) === JSON.stringify(konamiSequence)) {
-                document.body.style.filter = 'hue-rotate(180deg)';
-                createShareExplosion();
-                setTimeout(() => {
-                    document.body.style.filter = '';
-                }, 3000);
-            }
-        });
-    </script>
+  <!-- ✅ Scripts -->
+  <script src="script.js"></script>
 </body>
 </html>
+
